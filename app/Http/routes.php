@@ -20,4 +20,9 @@
 //   return view('pages.about');
 // });
 
-Route::get('/', 'PagesController@home');
+
+Route::get('/', function(){ return view('welcome');});
+Route::post('add', 'MealsController@store');
+Route::get('meals', 'MealsController@index');
+Route::get('meals/{meal}', 'MealsController@show');
+Route::post('meals/{meal}/nutrients', 'NutrientController@store');

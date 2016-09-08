@@ -38,9 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                @foreach ($people as $person)
-                  <li>{{ $person }}</li>
-                @endforeach
+                <h1>Laravel 5</h1>
             </div>
         </div>
     </body>
